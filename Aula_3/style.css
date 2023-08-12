@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Prism&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Tilt+Prism&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&family=Tilt+Prism&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    background-color: rgb(255, 255, 255);
+    width: 100vw;
+    height: 150px;
+}
+
+header {
+    width: 100%;
+    background-color: rgb(116, 255, 103);
+    height: 250px;
+}
+
+main {
+    width: 100%;
+    background-color: rgb(81, 167, 243);
+    height: 250px;
+    display: flex;
+}
+
+footer {
+    width: 100%;
+    background-color: rgb(224, 60, 930);
+    height: 80px;
+}
+
+header div h1 {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    padding: 40px;
+    /* font-family: 'Dancing Script', cursive; */
+    font-family: 'Tilt Prism', cursive;
+}
+
+main .ingredientes-conteudo{
+    background-color: rgb(241, 255, 43);
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    width: 30%
+}
+
+main .modo-preparo-conteudo {
+    background-color: rgb(81, 167, 243) ;
+    width: 70%
+    /* font-family: 'Lobster', cursive; */
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 40px;
+    font-size: 16px;
+    font-style: italic;
+    color: white;
+}
