@@ -1,0 +1,62 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: 0;
+}
+body{
+    background-image: linear-gradient(to right,red ,orange, yellow, green, blue, blueviolet, pink);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section {
+    display: flex;
+    background-color: rgba(64, 71, 64, 0.554);
+    height: 450px;
+    width: 350px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+
+    
+}
+
+section div{
+    background-color: rgb(64, 71, 64, 0) ;
+    height: 100px;
+    margin: 30px;
+    width: 50%;
+
+}
+
+section div img{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    object-position: center;
+
+}
+
+section div p{
+    background-color: rgb(64, 71, 64, 0);
+    font-size: 30px;
+
+
+}
+
+section div button {
+    height: 40px;
+    width: 80px;
+}
+
+section div .logar {
+    background-color: rgb(15, 191, 231);    
+}
+
+section div .sobre {
+    background-color: rgb(252, 114, 114);
+}
