@@ -1,0 +1,63 @@
+:root {
+    --main_color: rgb(255, 255, 88);
+    --second_color: rgb(58, 113, 176);
+    --third_color: rgb(56, 150, 56);
+    --gap: 3rem;
+
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    font-size: 2.3rem;
+}
+
+.intro-conteudo{
+    background-color: #00DBDE;
+    background-image: linear-gradient(180deg, #00DBDE 0%, #eeff07 100%);    
+    width: 100vw;
+    height: 100vh; 
+    display: flex; 
+    justify-content: center;
+    align-items: center; 
+}
+
+.main_bg {
+    background-color: var(--main_color);
+}
+
+.second_bg {
+    background-color: var(--second_color);
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+.main-content {
+    max-width: 70rem;
+}
+
+.img-content {
+    width: 20rem;
+    height: 20rem;
+}
+
+.intro-content {
+    width: 70%;
+    height: 80%;
+    display: flex;
+    padding: 0 var(--gap);
+    flex-flow: column wrap;
+    justify-content: center;
+}
+
+.intro-content p{
+    font-size: 1.6rem;
+}
