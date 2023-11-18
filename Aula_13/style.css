@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Sigmar&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to right, yellow, lime);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-quiz {
+    background-color: white;
+    border-radius: 15px;
+    height: 65%;
+    width: 35%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0.5rem 0.5rem 1rem black;
+}
+
+.conteudo-quiz {
+    padding: 3rem;
+    height: 80%;
+
+}
+
+h1{
+    text-align: center;
+    font-size: 4rem;
+}
+
+ul{
+    list-style: none;
+    padding-top: 3rem;
+}
+
+ul li {
+    font-style: 1.4rem;
+    margin: 1rem 0;
+}
+
+ul li label, ul li input {
+    cursor: pointer;
+}
+
+button{
+    cursor: pointer;
+    width: 100%;
+    height: 20%;
+    font-size: 2.4rem;
+    color: white;
+    border: none;
+    border-radius: 0 0 15px 15px;
+    background-color: black;
+    color: rgb(255, 255, 255);
+
+}
+
+button:hover {
+    background-color: rgb(46, 44, 44);
+}
+
+button:active{
+    background-color: green;
+}
