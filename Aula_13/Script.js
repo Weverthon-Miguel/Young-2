@@ -61,7 +61,10 @@ const CONTEINER_QUIZ = document.querySelector('.conteiner-quiz')
 let questao_atual = 0
 let qtd_corretas = 0
 
+
+
 function carregar_questoes() {
+    desmarcar()
     const QUESTAO = QUESTOES_QUIZ[questao_atual]
     TITULO_QUIZ.innerHTML = QUESTAO.questao
     ALTERNATIVA_A.innerHTML = QUESTAO.a
@@ -69,5 +72,46 @@ function carregar_questoes() {
     ALTERNATIVA_C.innerHTML = QUESTAO.c
     ALTERNATIVA_D.innerHTML = QUESTAO.d
 }
+
+function desmarcar() {
+    RESPOSTAS.forEach((resp_elemento) => {
+        resp_elemento.checked = false
+    })
+}
+
+function pegar_resposta() {
+    let resp = undefined
+
+    RESPOSTAS.forEach((resposta) => {
+        if (resposta.checked){
+            resp = resposta.id;    
+        }
+    })
+
+    return resp
+}
+
+BOTAO.addEventListener('click', () => {
+    const RESP_PLAYER = pegar_resposta()
+    const TOTAL_PERGUNTAS = QUESTOES_QUIZ.length
+    console.log(RESP_PLAYER)
+
+    if (RESP_PLAYER) {
+        if(RESP_PLAYER === QUESTOES_QUIZ[questao_atual].correta) {
+            qtd_corretas++
+        }
+        questao_atual++
+        if (questao_atual < TOTAL_PERGUNTAS) {
+            carregar_questoes()
+        }
+        else {
+            CONTEINER_QUIZ.innerHTML = `<h1 class="resetar">Você acertou ${qtd_corretas}/${TOTAL_PERGUNTAS} questões </h1>
+            <button class= resetar-btn" onclick= 'location.reload()'> Resetar </button>`
+        }
+    }
+    else {
+        console.log('Escolha algo')
+    }
+})                                                                                                                                                                                        
 
 carregar_questoes()
