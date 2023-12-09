@@ -13,7 +13,7 @@ html {
 body {
     text-align: center;
     min-height: 100vh;
-    background-color: lime;
+    background-color: orangered;
 
 }
 
@@ -40,7 +40,7 @@ main{
     right: 30%;
     color:gray;
     font-weight: bold;
-    font-size: clamp(0.8rem, 5vw, 2.5rem);
+    font-size: clamp(0.8rem, 5vw, 2rem);
 }
 
 .name_poke {
@@ -52,6 +52,15 @@ main{
     top: 65%;
     left: 15%;
     width: 65%;
+}
+
+form {
+    border: 0.2rem solid black;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: clamp(0.8rem, 5vw, 1rem);
+    box-shadow: -0.2rem 0.3rem 0 rgb(41, 41, 41), -0.4rem 0.6rem 0 black;
+
 }
 
 .buttons {
