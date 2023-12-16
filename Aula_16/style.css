@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Sigmar&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif ;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    border-radius: 10% 10% 10% 10%;
+    background-color: rgb(0, 136, 255);
+     align-items: center;
+    height: 330px;
+    width: 440px;
+}
+
+.cep-input{
+    width: 190px;
+    height: 30px;
+    margin: 10px;
+}
+.estado-input{
+    width: 190px;
+    height: 30px;
+    border-radius: 15px; 
+    margin: 10px;
+}
+.cidade-input{
+    width: 190px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 10px;
+}
+.logadouro-input{
+    width: 190px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 10px;
+}
+.numero-input{
+    width: 190px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 10px;
+}
+.bairro-input{
+    width: 190px;
+    height: 30px;
+    border-radius: 15px;
+    margin: 10px;
+}
+
+.barra {
+    background-color: blue;
+    width: 50px;
+    border-radius: 15px 0px 0px 15px;
+    height: 330px ; 
+}
+
+button {
+    height: 30px;
+    width: 100px;
+    background-color: rgb(116, 124, 131);
+    margin: 10px;
+}   
+
+
