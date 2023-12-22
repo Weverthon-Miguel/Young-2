@@ -10,24 +10,25 @@
 
 <body>
     <main>
+        <span id="message"></span>
         <div class="barra"></div>
         <form class="form">
             <div class="cep">
-                <input class="cep-input" type="search" placeholder="CEP">
+                <input class="cep-input" id="cep" type="search" placeholder="CEP">
             </div>
 
             <div class="estado">
-                <input  class="estado-input"  type="text" placeholder="UF">
+                <input  class="estado-input" id="state"  type="text" placeholder="UF">
             </div>
             <div class="cidade">
-                <input class="cidade-input"  type="text" placeholder="Cidade">
+                <input class="cidade-input" id="city" type="text" placeholder="Cidade">
+            </div class= "logadouro">
+                <input type="text" id="rrua " placeholder="Logadouro" class="logadouro-input" >
+                <input type="text" id="rrua " placeholder="Número" class="numero-input">
             </div>
-            <div class="logadouro">
-                <input class="logadouro-input"  type="text" placeholder="Logadouro">
-                <input class="numero-input" type="text" placeholder="Número">
-            </div>
+
             <div class="bairro">
-                <input class="bairro-input"  type="text" placeholder="Bairro">
+                <input class="bairro-input" id="address" type="text" placeholder="Bairro">
             </div>
             <div class="button">
                 <button class="button-input" type="submit">Pesquisar</button>

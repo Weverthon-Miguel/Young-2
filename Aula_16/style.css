@@ -30,33 +30,41 @@ main {
 .estado-input{
     width: 190px;
     height: 30px;
-    border-radius: 15px; 
+    border-radius: 5px; 
     margin: 10px;
+    background-color: rgb(212, 212, 212);
 }
 .cidade-input{
     width: 190px;
     height: 30px;
-    border-radius: 15px;
+    border-radius: 5px;
     margin: 10px;
+    background-color: rgb(212, 212, 212);
 }
 .logadouro-input{
     width: 190px;
     height: 30px;
-    border-radius: 15px;
-    margin: 10px;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right:0px ;
+    background-color: rgb(212, 212, 212);
 }
 .numero-input{
-    width: 190px;
+    width: 60px;
     height: 30px;
-    border-radius: 15px;
-    margin: 10px;
+    border-radius: 5px;
+
 }
 .bairro-input{
     width: 190px;
     height: 30px;
-    border-radius: 15px;
+    border-radius: 5px;
     margin: 10px;
-}
+    background-color: rgb(212, 212, 212);
+} 
+
 
 .barra {
     background-color: blue;
